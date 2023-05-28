@@ -1,0 +1,26 @@
+{% extends 'base.html'%}
+{%load static %}
+{%block title%}
+Home
+{%endblock title%}
+    {%block others %}
+    {%endblock others%}
+
+{%block content%}
+
+{%include 'partials/navbar.html'%}
+    <header class=" bg-cover min-h-screen bg-opacity-75 showcase border-gray-600 border-b-10 flex-auto justify-center items-center align-botoom bg-no-repeat"  style="background-image: url('{%static 'background.jpg'%}');">
+
+        <div class="z-10 h-full py-32 md:py-96 md:px-64 text-gray-100 text-center flex items-center flex-col fixed">
+            <h2 class="text-sm md:text-5xl pb-7 md:text-3xl w-10/12 md:w-3/4 font-serif text-center text-white" style="font-family: Bruno Ace SC" >
+                THE FUTURE OF FITNESS IS AT YOUR PLACE
+            </h2>
+            <h1 class="font-semibold text-6xl md:text-9xl w-10/12 md:w-3/4 text-center text-white " style="font-family: Bruno Ace SC">
+                FITNESS POWER
+            </h1>
+                </div>
+
+ </header>
+
+
+{%endblock content%}

@@ -1,0 +1,32 @@
+{% extends 'base.html'%}
+{%load static %}
+{%block title%}
+Home
+{%endblock title%}
+    {%block others %}
+    {%endblock others%}
+
+{%block content%}
+
+{%include 'partials/navbar.html'%}
+
+
+        <div class="break-normal z-10 h-full py-16 md:py-20 md:px-12 text-gray-100 text-center flex items-left justify-start flex-col fixed bg-gray">
+            <img src="{%static 'warmup.jpg'%}"  alt="warmup" width=30% height=40% class="md:px-2 sm:py-8 p-1 object-left" >
+            <h2 class="text-sm md:text-xl pb-1 md:px-2 md:py-6/12 md:text-lg  break-normal text-left text-white" style="font-family: Bruno Ace SC" >
+                The Best 15-Minute Warm-Ups
+            </h2>
+            <p class="w-1/4 text-sm md:text-sm pb-7  text-clip md:px-1 md:py-6/12 md:text-lg  break-normal text-left text-white break-normal "style="font-family: Bruno Ace SC">
+                Maximize your workout with these versatile and quick warm-up routines! In just 15minutes,
+                you will be better prepared for any workout program that you take on.
+            </p>
+            <button class='pb-1 text-black hover:text-white md:text-xl rounded-md bg-gray w-32 h-15  bg-sky-600 ' style="font-family: Bruno Ace SC">
+                  <a href="{%url 'core:warmup' %}" class="flex content-between justify w-32">View Workout</a>
+                </button>
+                </div>
+
+
+ </header>
+
+
+{%endblock content%}

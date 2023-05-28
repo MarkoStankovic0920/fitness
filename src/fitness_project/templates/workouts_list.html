@@ -1,0 +1,35 @@
+{% extends 'base.html'%}
+{%load static %}
+{%block title%}
+Home
+{%endblock title%}
+    {%block others %}
+    {%endblock others%}
+
+{%block content%}
+
+{%include 'partials/navbar.html'%}
+
+
+        <div class="flex min-h-screen items-center justify-center bg-zinc-900">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+                {% for instance in object_list%}
+                <div class="group rounded-xl  relative items-center justify-center overflow-hidden cursor-pointer hover:shadow-x1 hover:shadow-black/30 transition-shadow">
+                    <div class="h-[400px] w-96">
+                        <img class="h-full w-full object-cover group-hover:rotate-3 group-hover:scale-125 transition-transform duration-500" src="{{instance.picture.url}}">
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
+                    <div class="absolute inset-0 flex flex-col items-center justify-center px-9 text-center translate-y-[60%] group-hover:translate-y-0 transition-all">
+                        <h1 class="text-2xl font-bold text-white" style="font-family: Bruno Ace SC">{{instance.title}}</h1>
+                        <p class="text-lg italic text-white mb-3 group-hover:opacity-100 transition-opacity duration-300" style="font-family: Bruno Ace SC">{{instance.description}}</p>
+                        <button class="rounded-full shadow shadow-black/60 bg-black py-2 px-2.5 text-sm capitalize text-white" style="font-family: Bruno Ace SC">
+                            <a href="{%url 'core:warmup' %}" class="flex content-between justify w-32">View Workout</a>
+                        </button>
+                    </div>
+                </div>
+                {% endfor%}
+            </div>
+        </div>
+
+
+{%endblock content%}

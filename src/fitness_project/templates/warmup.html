@@ -1,0 +1,338 @@
+{% extends 'base.html'%}
+{%load static %}
+{%block title%}
+Home
+{%endblock title%}
+    {%block others %}
+    {%endblock others%}
+
+{%block content%}
+
+{%include 'partials/navbar.html'%}
+
+
+
+
+
+    <div class='flex flex-col md:flex-row items-center border-gray-900 border-b-8 bg-black ' style="min-height: 60vh;">
+        <div class="md:w-1/2 flex flex-col justify-center text-center md:text-left p-5 md:p- ">
+            <h2 class="md:text-5xl text-4xl font-semibold mb-4 text-white w-3/4" style="font-family: Bruno Ace SC">
+                The Best 15-Minute Warm-Ups
+            </h2>
+            <h5 class="md:text-xl text-lg w-96 text-white" style="font-family: Bruno Ace SC">
+                Maximize your workout with these versatile and quick warm-up routines! In just 15 minutes, you will be better prepared for any workout program that you take on
+            </h5>
+        </div>
+        <div class='md:w-1/2 md:py-32 flex justify-center items-center'>
+            <img src="{%static 'warmup1.jpg'%}" class="w-6/12" alt="">
+        </div>
+    </div>
+
+    <div class='flex justify-between   border-gray-900 border-b-8 bg-black md:py-20 md:px-24' style="min-height: 60vh;">
+        <div class="md:px-1 mr-32">
+            <div class="md:px-1">
+            <h2 class="md:text-5xl text-4xl font-semibold mb-4 text-white underline underline-offset-1" style="font-family: Bruno Ace SC">
+                Workout Description
+            </h2>
+        </div>
+        <div class='md:px-1'>
+             <h5 class="md:text-xl text-lg text-white " style="font-family: Bruno Ace SC">
+                 Everyone that commits to being fit and strong wants to perform at his or her best when it comes time to train. No one has great workouts 100 percent of the time, but there is no feeling greater than leaving the gym or weight room knowing you got a good one in.It should make sense that taking every step necessary to maximize the chances of achieving that feeling would be a good idea, right?
+            </h5>
+        </div>
+
+
+            </div>
+    <div class='flex items-right md:flex-col  md:px-1' >
+     <div class="md:px-1 mt-1">
+            <h2 class="md:text-5xl text-4xl font-semibold mb-4 text-white underline underline-offset-1" style="font-family: Bruno Ace SC">
+                How to Warm Up
+            </h2>
+        </div>
+        <div class=' flex justify-center items-center order-2'>
+             <h5 class="md:text-xl text-lg  text-white " style="font-family: Bruno Ace SC">
+                For you beginners out there reading this, you should know that it’s never a good idea to stretch cold muscles. This is an easy way to injure yourself before you even start training. Movement should always come before stretching. Even something as simple as a three-minute walk could help kick-start your warm-up process. After the body has been moving, then stretching can come in handy.
+                Another way to warm up effectively is by focusing on stabilization. Positions such as planks and squat holds can be very effective at waking up those muscle fibers. They can also help improve the range of motion and ability to contract.
+            </h5>
+        </div>
+    </div>
+
+    </div>
+
+    <div class='flex columns-4 flex-col md:flex-row  border-gray-900 border-b-8 bg-black' style="min-height: 70vh;">
+        <div class="md:px-24">
+            <div class="md:w-1/2 flex flex-col justify-center text-center md:text-left p-1">
+            <h2 class="md:text-5xl text-4xl font-semibold mb-4 text-white underline underline-offset-1 w-96" style="font-family: Bruno Ace SC">
+                Full-Body Focused Warm-Up
+            </h2>
+        </div>
+        <div class=''>
+             <h5 class="md:text-xl text-lg  text-white" style="font-family: Bruno Ace SC">
+    Beginners and even intermediate fitness enthusiasts can benefit from utilizing a full-body workout program. Instead of taking a top-down approach, beginning with the feet and working your way up the body will help you make the most out of the time you spend preparing.
+    That’s why after your brief walk, you will start working on your feet. They are what connect you to the ground, so make sure they feel good first. Then work your way up the lower body. Execute each rep or segment with control and precision. Flying through this won’t help you.
+    The rest periods shouldn’t be spent resting alone. Use that time to help you transition from one movement to the next. Challenge yourself to decrease the rest time between exercises. For example, if you need 45 seconds to rest during your first go-round, try to decrease that time to 40 seconds next time.
+            </h5>
+        </div>
+            <table  class="bg-black">
+	<thead class="bg-sky-400 border-black items-center" style="font-family: Bruno Ace SC">
+		<tr class="items-left">
+			<th>Exercise</th>
+			<th>Sets</th>
+			<th>Reps/Time</th>
+            <th>Rest</th>
+		</tr>
+	</thead>
+	<tbody class="text-black bg-white border-black border-2 items-center content center" style="font-family: Bruno Ace SC">
+    <tr class="justify-center border-current border 2">
+			<td>Fast-Paced Walk</td>
+			<td>1</td>
+			<td>3 min</td>
+            <td>30-45 sec</td>
+		</tr>
+		<tr class="justify-center border-current border 2">
+			<td>Plantar Fascia w/Lacrosse Ball</td>
+			<td>1</td>
+			<td>15 sec, each foot</td>
+            <td>30-45 sec</td>
+		</tr>
+		<tr class="justify-center border-current border 2">
+			<td>Donkey Calf Raise</td>
+			<td>1</td>
+			<td>15</td>
+            <td>30-45 sec</td>
+		</tr class="justify-center border-current border 2">
+    <tr>
+			<td>Dumbell Goblet Squad</td>
+			<td>1</td>
+			<td>15</td>
+            <td>30-45 sec</td>
+		</tr>
+     <tr class="justify-center border-current border 2">
+			<td>Bodyweight Walking Lunge</td>
+			<td>1</td>
+			<td>10, each leg</td>
+            <td>30-45 sec</td>
+		</tr>
+    <tr class="justify-center border-current border 2">
+			<td>Side Plank</td>
+			<td>1</td>
+			<td>30 sec, each side</td>
+            <td>30-45 sec</td>
+		</tr>
+<tr class="justify-center border-current border 2">
+			<td>Plyometric Push Up</td>
+			<td>1</td>
+			<td>15</td>
+            <td>30-45 sec</td>
+		</tr>
+    <tr class="justify-center border-black border-current border 2">
+			<td>Rack Lat Stretch</td>
+			<td>1</td>
+			<td>30</td>
+            <td>30-45 sec</td>
+		</tr>
+
+
+
+	</tbody>
+</table>
+    </div>
+    </div>
+<div class='flex columns-4 flex-col md:flex-row  border-gray-900 border-b-8 bg-black' style="min-height: 80vh;">
+        <div class="md:px-24">
+            <div class="md:w-1/2 flex flex-col justify-center text-center md:text-left p-1">
+            <h2 class="md:text-5xl text-4xl font-semibold mb-4 text-white underline underline-offset-1 w-96" style="font-family: Bruno Ace SC">
+                Lower Body Focused Warm-Up
+            </h2>
+        </div>
+        <div class=''>
+             <h5 class="md:text-xl text-lg  text-white" style="font-family: Bruno Ace SC">
+    This is a program that could be used for some intermediate and advanced lifters that want to focus on specific portions of the body. Tag this one with any leg day program and your results will speak for themselves.
+    This one gets more specific to the lower body. One example is the IT Band Foam Roller exercise. If you don’t have a Foam Roller, use something like a tennis ball or med ball until you can get a roller. There are also single-leg movements and holds included. Concentrate so you can feel the stretch and contraction of the targeted area.
+    Finally, there are movements for the core and shoulders. This is because they could be involved in a secondary role. Think about the squat. Your core needs to be able to stay tight and stabilize the body while you’re squatting. The shoulders are what the barbell will be on, so they should be prepared as well.
+            </h5>
+        </div>
+            <table  class="bg-black">
+	<thead class="bg-sky-400 border-black items-center" style="font-family: Bruno Ace SC">
+		<tr class="items-left">
+			<th>Exercise</th>
+			<th>Sets</th>
+			<th>Reps/Time</th>
+            <th>Rest</th>
+		</tr>
+	</thead>
+	<tbody class="text-black bg-white border-black border-2 items-center content center" style="font-family: Bruno Ace SC">
+    <tr class="justify-center border-current border 2">
+			<td>Fast-Paced Walk</td>
+			<td>1</td>
+			<td>3 min</td>
+            <td>30-45 sec</td>
+		</tr>
+		<tr class="justify-center border-current border 2">
+			<td>Bodyweight Standing Calf Raise</td>
+			<td>1</td>
+			<td>15</td>
+            <td>30-45 sec</td>
+		</tr>
+		<tr class="justify-center border-current border 2">
+			<td>IT Band Foam Roller</td>
+			<td>1</td>
+			<td>30 sec, each side</td>
+            <td>30-45 sec</td>
+		</tr class="justify-center border-current border 2">
+    <tr>
+			<td>Bodyweight Single-Leg Deadlift</td>
+			<td>1</td>
+			<td>15, each side</td>
+            <td>30-45 sec</td>
+		</tr>
+     <tr class="justify-center border-current border 2">
+			<td>Prisoner Squat</td>
+			<td>1</td>
+			<td>15</td>
+            <td>30-45 sec</td>
+		</tr>
+    <tr class="justify-center border-current border 2">
+			<td>Prisoner Squat(Hold at the Bottom)</td>
+			<td>1</td>
+			<td>30 sec</td>
+            <td>30-45 sec</td>
+		</tr>
+<tr class="justify-center border-current border 2">
+			<td>Superman</td>
+			<td>1</td>
+			<td>30 sec</td>
+            <td>30-45 sec</td>
+		</tr>
+    <tr class="justify-center border-black border-current border 2">
+			<td>Plank</td>
+			<td>1</td>
+			<td>30 sec</td>
+            <td>30-45 sec</td>
+		</tr>
+    <tr class="justify-center border-black border-current border 2">
+			<td>Band Pull-Apart</td>
+			<td>1</td>
+			<td>15</td>
+            <td>30-45 sec</td>
+		</tr>
+
+
+
+	</tbody>
+</table>
+    </div>
+</div>
+<div class='flex columns-4 flex-col md:flex-row  border-gray-900 border-b-8 bg-black' style="min-height: 80vh;">
+        <div class="md:px-24">
+            <div class="md:w-1/2 flex flex-col justify-center text-center md:text-left p-1">
+            <h2 class="md:text-5xl text-4xl font-semibold mb-4 text-white underline underline-offset-1 w-96" style="font-family: Bruno Ace SC">
+                Upper Body Focused Warm-Up
+            </h2>
+        </div>
+        <div class=''>
+             <h5 class="md:text-xl text-lg  text-white" style="font-family: Bruno Ace SC">
+                 This is another one that could be used by people that are beyond the beginner stage. Regardless if you follow a bro-split, or you train the entire upper body in one session, this is a good one that could be used for any workout. There aren’t any static holds included, but those eccentric pull-ups will be great for targeting the lats, upper back, and even the biceps. Sit-ups will challenge the core, and the jump squats will help increase the body temperature and prepare the legs for stabilizing the body during some upper body exercises. </h5>
+        </div>
+            <table  class="bg-black">
+	<thead class="bg-sky-400 border-black items-center border-2" style="font-family: Bruno Ace SC">
+		<tr class="items-left">
+			<th>Exercise</th>
+			<th>Sets</th>
+			<th>Reps/Time</th>
+            <th>Rest</th>
+		</tr>
+	</thead>
+	<tbody class="text-black bg-white border-black border-2 items-center content center" style="font-family: Bruno Ace SC">
+    <tr class="justify-center border-current border 2">
+			<td>Fast-Paced Walk</td>
+			<td>1</td>
+			<td>3 min</td>
+            <td>30-45 sec</td>
+		</tr>
+		<tr class="justify-center border-current border 2">
+			<td>Push Up</td>
+			<td>1</td>
+			<td>15</td>
+            <td>30-45 sec</td>
+		</tr>
+		<tr class="justify-center border-current border 2">
+			<td>Bench Dips</td>
+			<td>1</td>
+			<td>15</td>
+            <td>30-45 sec</td>
+		</tr class="justify-center border-current border 2">
+    <tr>
+			<td>Arm Circles (Clockwise)</td>
+			<td>1</td>
+			<td>15</td>
+            <td>none</td>
+		</tr>
+     <tr class="justify-center border-current border 2">
+			<td>Arm Circles(Counter clockwise)</td>
+			<td>1</td>
+			<td>15</td>
+            <td>30-45 sec</td>
+		</tr>
+    <tr class="justify-center border-current border 2">
+			<td>Eccentric Only Pull Up</td>
+			<td>1</td>
+			<td>5</td>
+            <td>30-45 sec</td>
+		</tr>
+<tr class="justify-center border-current border 2">
+			<td>Seated Zottman Curl</td>
+			<td>1</td>
+			<td>15</td>
+            <td>30-45 sec</td>
+		</tr>
+     <tr class="justify-center border-black border-current border 2">
+			<td>90/90 Hip Crossover</td>
+			<td>1</td>
+			<td>15, each side</td>
+            <td>30-45 sec</td>
+		</tr>
+    <tr class="justify-center border-black border-current border 2">
+			<td>Sit Up</td>
+			<td>1</td>
+			<td>15</td>
+            <td>30-45 sec</td>
+		</tr>
+    <tr class="justify-center border-black border-current border 2">
+			<td>Jump Squat</td>
+			<td>1</td>
+			<td>15</td>
+            <td>30-45 sec</td>
+		</tr>
+
+
+
+	</tbody>
+</table>
+    </div>
+</div>
+
+<div class='flex columns-4 flex-col md:flex-row  border-gray-900  bg-black' style="min-height: 30vh;">
+        <div class="md:px-24">
+            <div class="md:w-1/2 flex flex-col justify-center text-center md:text-left p-1">
+            <h2 class="md:text-5xl text-4xl font-semibold mb-4 text-white underline underline-offset-1 w-96" style="font-family: Bruno Ace SC">
+                Conclusion
+            </h2>
+        </div>
+        <div class=''>
+             <h5 class="md:text-xl text-lg  text-white" style="font-family: Bruno Ace SC">
+                 Warming up isn’t as exciting as going for that new personal record or chasing the pump, but taking those 15 minutes to prepare can make those experiences even better. These workouts don’t have to be saved for the gym, either. Use them first thing in the morning or any time that you feel you need to perform some activity. If you sit for extended periods, the full-body warm-up can come in real handy. Take these programs, make them your own, and feel the benefits that come with them.
+Shareto Print Share toFacebook Share toEmail App Share to WhatsApp Share toPinterest Share to Twitter Share to Messenger</h5>
+        </div>
+
+             <footer class="md:text-xl text-lg  mt-10 bg-black text-white" style="font-family: Bruno Ace SC">
+        <ul class="flex justify-between items-center">
+
+            <li>&copy; 2023</li>
+            <li>Made with Django and Tailwind</li>
+            <li>By Marko</li>
+        </ul>
+    </footer>
+
+
+{%endblock content%}

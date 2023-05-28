@@ -1,0 +1,38 @@
+{% load static %}
+<nav class="flex bg-black  items-center justify-between text-white fixed w-full z-50">
+<div class="flex md:w-4/12 w-6/12 relative border-gray-400 justify ">
+    <a href="{%url 'core:home' %}">
+    <img src="{%static 'logo.jpg'%}"  alt="logo" class="w-32 ">
+        </a>
+    <div class="md:flex justify-auto flex mr-auto border-slate-600" style="font-family: Bruno Ace SC">
+        <button class='py-1 px-3 text-white hover:text-sky-400 md:text-2xl rounded-md bg-gray flex-initial w-32'>
+                  <a href="{%url 'core:home' %}">Home</a>
+                </button>
+        <button class='py-1 px-1 mr-0 text-white hover:text-sky-400 md:text-2xl rounded-md flex-initial w-64'>
+                   <a href="{%url 'core:workouts' %}">Workouts</a>
+
+        <div class="md:flex justify-auto flex mr-auto border-slate-600" style="font-family: Bruno Ace SC">
+        <button class='py-1 px-2 text-white hover:text-sky-400 md:text-2xl rounded-md bg-gray flex-initial w-5/12'>
+                  <a href="{%url 'core:about' %}">About Us</a>
+                </button>
+
+
+    </div>
+        </div>
+             {% if request.user.is_authenticated %}
+                <form  action="{% url 'account_logout' %}" class="md:px-8" method="post">
+                    {% csrf_token %}
+                    <button class='bg-black border-white border-2 py-1 px-3 text-white md:text-lg rounded-md' style="font-family: Bruno Ace SC">
+                        Logout
+                    </button>
+                </form>
+
+             {% else %}
+            <a href ="{%url 'account_login'%}" class="md:px-8">
+                <button class='bg-black border-white border-2 py-1 px-3 text-white md:text-lg rounded-md' style="font-family: Bruno Ace SC">
+                    Sign In
+                </button>
+            </a>
+
+            {% endif %}
+    </nav>

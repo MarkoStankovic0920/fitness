@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Fitness </title>
+    {%block others %} {%endblock others%}
+
+</head>
+<body >
+{%block content%}
+
+
+
+{%endblock content%}
+<script>
+    const nav = document.querySelector('nav')
+
+    document.addEventListener("scroll",e->{
+        if(scrollY>100){
+            nav.classList.add('bg-gray-900')
+        }
+        else{
+            nav.classList.remove('bg-gray-900')
+        }
+    })
+</script>
+</body>
+</html>
